@@ -1,0 +1,48 @@
+body {
+    background-color: #eb291e;
+}
+
+#header {
+    height: 75px;
+}
+
+.title {
+    display: inline-block;
+    font-family: "Press Start 2P";
+    font-size: 45px;
+    width: 60%;
+    position: relative;
+    top: 15px;
+}
+
+#svg {
+    background-color: white;
+    border: 3px solid #b30b02;
+}
+
+#svg:hover {
+    cursor: url('brush.png');
+}
+
+.menu {
+    display: inline-block;
+    width: 30%;
+}
+
+.btn-clear {
+    font-family: "Press Start 2P";
+    padding: 15px;
+}
+
+.color-picker {
+    padding: 11px;
+}
+
+.size {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Press Start 2P";
+    color: white;
+    margin: 10px;
+}
+
