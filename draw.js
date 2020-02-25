@@ -9,7 +9,18 @@ window.onload = () => {
 	let size = brushSize.value;
 	let color = 'black';
 
+
 	function draw_point() {
+		const pointCoords = d3.mouse(this);
+
+		svg.append('circle')
+				.attr('cx', pointCoords[0])
+				.attr('cy', pointCoords[1])
+				.attr('r', size / 2)
+				.style('fill', color);
+	}
+
+	function draw() {
 		if (drawing) {
 			if (coords) {
 				prevCoords = coords.slice();
@@ -40,7 +51,9 @@ window.onload = () => {
 		svg.selectAll('*').remove();
 	}
 
-	svg.on('mousemove', draw_point);
+
+	svg.on('click', draw_point);
+	svg.on('mousemove', draw);
 	svg.on('mousedown', () => {
 		drawing = true;
 	});
