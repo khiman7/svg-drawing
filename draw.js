@@ -1,5 +1,5 @@
 window.onload = () => {
-	const svg = d3.select('#svg');
+	const svg = d3.select('svg');
 	const clearButton = document.querySelector('.btn-clear');
 	const colorPicker = document.querySelector('.color-picker');
 	const brushSize = document.querySelector('.brush-size');
@@ -65,7 +65,7 @@ window.onload = () => {
 	colorPicker.addEventListener('change', () => {
 		color = colorPicker.value;
 	});
-	brushSize.addEventListener('change', () => {
+	brushSize.addEventListener('input', () => {
 		document.querySelector('.size').innerText = brushSize.value;
 		size = brushSize.value;
 	});
