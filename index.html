@@ -9,19 +9,17 @@
     <script src="draw.js"></script>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="header">
-            <div class="menu">
-                <button class="btn btn-clear">Clear</button>
-                <input type="color" class="color-picker">
-                <input type="range" class="brush-size" min="1" max="100" value="10">
-                <span class="size">10</span>
-            </div>
-            <div class="title">
-                <span style="color: orange">S</span><span style="color: red">V</span><span style="color: yellow">G </span><span style="color: green">D</span><span style="color: cyan">R</span><span style="color: purple">A</span><span style="color: navy">W</span><span style="color: orange">I</span><span style="color: red">N</span><span style="color: yellow">G</span>
-            </div>
+    <div class="wrapper">
+        <div class="header title">
+            <span style="color: orange">S</span><span style="color: red">V</span><span style="color: yellow">G </span><span style="color: green">D</span><span style="color: cyan">R</span><span style="color: purple">A</span><span style="color: navy">W</span><span style="color: orange">I</span><span style="color: red">N</span><span style="color: yellow">G</span>
         </div>
-        <svg id="svg" style="width: 100%; height: 575px" />
+        <div class="menu">
+            <input type="color" class="menu-item color-picker">
+            <input type="range" class="menu-item brush-size" min="1" max="100" value="10">
+            <div class="menu-item size">10</div>
+            <button class="menu-item btn btn-clear">Clear</button>    
+        </div>
+        <svg class="svg"></svg>
     </div>
 </body>
 </html>
